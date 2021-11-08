@@ -1,6 +1,6 @@
 window.onload = function () {
     document.getElementById("loginButton").addEventListener('click', function () {
-        location.href = 'https://accounts.spotify.com/authorize?client_id=790c4a612fdd4460a162bbe664d908d6&response_type=token&scope=user-read-playback-state&redirect_uri=https://lyrics.oryfox.de/';
+        location.href = 'https://accounts.spotify.com/authorize?client_id=790c4a612fdd4460a162bbe664d908d6&response_type=token&scope=user-read-playback-state&redirect_uri=https://oryfox.github.io/lyrics/';
     });
     document.getElementById("reloadButton").addEventListener('click', function () {
         location.reload();
@@ -11,7 +11,7 @@ window.onload = function () {
         message.innerHTML = "Parsing Access Token";
         const accessToken = window.location.hash.split("&")[0].split("=")[1];
         document.cookie = "spotifyAccessToken=" + accessToken;
-        location.href = "https://lyrics.oryfox.de/";
+        location.href = "https://oryfox.github.io/lyrics/";
     } else {
         if (document.cookie) {
             message.innerHTML = "Fetching information";
