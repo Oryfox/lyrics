@@ -1,0 +1,12 @@
+#loginButton {
+    background: #1db954;
+    color: white;
+    border: none;
+    padding: 10px 50px;
+    max-height: 50px;
+}
+
+img {
+    width: auto;
+    height: 40px;
+}
